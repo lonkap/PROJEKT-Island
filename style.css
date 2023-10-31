@@ -19,6 +19,7 @@ html { box-sizing: border-box; }
 	--obr_pozadi: url(images/island-hlavicka.jpg);	
 	--bila: #fff;
 	--seda:#f5f5f5;
+	--silver:#c0c0c0;
 	--tucne:700;
 	--vyskaH1:48px;
 	--stin: 0 0 20px black
@@ -26,7 +27,7 @@ html { box-sizing: border-box; }
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f5f5f5;
+	background-color: var(--seda);
 	font-size: 16px;
 	line-height: 1.6;
 	--modra: #629fe0;
@@ -81,15 +82,30 @@ ul
 li
 {
 	list-style: none;
-	border-bottom: 1px solid gray ;
+	border-bottom: 1px solid var(--seda) ;
 	text-align: center;
 	
 }
 a
 {
 	text-decoration: none;
-	color: gray;
+	color: var(--silver);
 	text-transform: uppercase;
+	font-weight: var(--tucne);
 	
 }
-	
+	section p, h2
+	{
+		padding: 20px;
+	}
+
+	section img{
+		width: 100%;
+	}
+
+	.popisek
+	{
+		text-align: center;
+		color: var(--silver);
+		
+	}
