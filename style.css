@@ -13,12 +13,83 @@ html { box-sizing: border-box; }
 	Raleway					nadpisy a menu
 	Oba fonty jsou dostupné na Google Fonts.
 */
-
+:root
+{--pismo:'Merriweather', serif;
+	--nadpis_menu:'Raleway', sans-serif;
+	--obr_pozadi: url(images/island-hlavicka.jpg);	
+	--bila: #fff;
+	--seda:#f5f5f5;
+	--tucne:700;
+	--vyskaH1:48px;
+	--stin: 0 0 20px black
+}
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #f5f5f5;
 	font-size: 16px;
 	line-height: 1.6;
+	--modra: #629fe0;
+	font-family: var(--pismo);
 }
 
+h1, h2, .menu
+{
+	font-family: var(--nadpis_menu);
+	
+}
+
+h1
+{
+	color: var(--bila);
+	font-weight:var(--tucne);
+	font-size: var(--vyskaH1);
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
+
+header
+{
+	background-image: var(--obr_pozadi);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+header img{
+	width: 100%;
+	max-height: 300px;
+	filter: brightness(0.6);
+}
+
+header p
+{
+	color: var(--seda);
+	padding: 0 20px 20px 20px;
+	margin: 0;
+	text-align: center;
+	font-size: var(--tucne);
+}
+
+ul
+{
+	padding: 0;
+	margin: 40px 0;
+}
+
+li
+{
+	list-style: none;
+	border-bottom: 1px solid gray ;
+	text-align: center;
+	
+}
+a
+{
+	text-decoration: none;
+	color: gray;
+	text-transform: uppercase;
+	
+}
+	
