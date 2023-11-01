@@ -50,7 +50,9 @@ h1
 	text-align: center;
 	margin: 0;
 	padding: 10px;
+	
 }
+
 
 header
 {
@@ -72,8 +74,8 @@ header p
 	margin: 0;
 	text-align: center;
 	font-weight: var(--tucne);
-	font-size: var(--pismo-mensi)
-	}
+	font-size: var(--pismo-mensi);
+		}
 header  :nth-child(3)
 {
 	color: var(--seda);
@@ -204,4 +206,42 @@ footer a
 .posledni
 {
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+		}
+@media screen and (min-width:540px){
+	ul{
+		display: flex;
+		justify-content: space-evenly;
+		border-top:1px solid var(--silver);
+		border-bottom:1px solid var(--silver);
+	
+	}
+	li{
+		border-bottom: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li a{
+		padding:20px;
+	}
+	.menu li:hover{
+		background-color: var(--modra);
+			}
+
+	.menu a:hover{
+		color: var(--bila)
+	}
+	
+	.fotky
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+.foto{
+	width: 50%;
+}
+
+.posledni
+{
+	box-shadow: 0 0 0;
 		}
