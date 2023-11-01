@@ -22,7 +22,9 @@ html { box-sizing: border-box; }
 	--silver:#c0c0c0;
 	--tucne:700;
 	--vyskaH1:48px;
-	--stin: 0 0 20px black
+	--stin: 0 0 20px black;
+	--pismo-mensi:14px;
+	--popisek: 12px;
 }
 body {
 	margin: 0;
@@ -47,7 +49,7 @@ h1
 	font-size: var(--vyskaH1);
 	text-align: center;
 	margin: 0;
-	padding: 20px;
+	padding: 10px;
 }
 
 header
@@ -61,16 +63,31 @@ header
 header img{
 	width: 100%;
 	max-height: 300px;
-	filter: brightness(0.6);
-}
+	}
 
 header p
 {
 	color: var(--seda);
-	padding: 0 20px 20px 20px;
+	padding: 0 15px 20px 20px;
 	margin: 0;
 	text-align: center;
-	font-size: var(--tucne);
+	font-weight: var(--tucne);
+	font-size: var(--pismo-mensi)
+	}
+header  :nth-child(3)
+{
+	color: var(--seda);
+	font-style: italic;
+}
+
+header  :nth-child(3)::before
+{
+	content: "";
+	display: block;
+	width: 80px;
+	height: 1px;
+	margin: 20px auto;
+	background-color: var(--seda);
 }
 
 ul
@@ -82,11 +99,11 @@ ul
 li
 {
 	list-style: none;
-	border-bottom: 1px solid var(--seda) ;
 	text-align: center;
+	border-bottom: 1px solid var(--silver);
 	
 }
-a
+li a
 {
 	text-decoration: none;
 	color: var(--silver);
@@ -107,5 +124,84 @@ a
 	{
 		text-align: center;
 		color: var(--silver);
+		padding: 0;
+		font-size: var(--popisek);
+		margin: 0;
 		
 	}
+
+	.popisek a
+	{
+		text-decoration: underline;
+	}
+
+	h2::after
+	{
+		content: "";
+		display: block;
+		height: 3px;
+		width: 15%;
+		background-color: var(--modra);
+		margin-left: -20px;
+		margin-top: 20px;
+	}
+
+h2
+	{
+		margin: 0;
+	}
+section p
+	{
+		margin: 0;
+		padding-top: 10px;
+	}
+.fotogalerie img
+{
+		width: 100%;
+	}
+	.fotogalerie .popisek
+{
+	color: var(--silver);
+	margin: 0 auto 20px auto;
+	font-size: var(--popisek);
+
+}
+
+.fotogalerie a, a
+{
+	color: var(--silver);
+	
+}
+.popisek::first-line
+{
+	font-weight: var(--tucne);
+}
+
+footer
+{
+	background-color: var(--seda);
+	color: var(--silver);
+	padding: 20px;
+	font-size: var(--pismo-mensi);
+	
+}
+
+footer a
+{
+	font-weight:var(--tucne) ;
+}
+
+.tucne
+{
+	font-weight: var(--tucne);
+}
+
+.posledni .popisek
+{
+	padding-bottom: 15px;
+}
+
+.posledni
+{
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+		}
