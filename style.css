@@ -232,6 +232,7 @@ footer a
 
 	li a{
 		padding:20px;
+		
 	}
 	.menu li:hover{
 		background-color: var(--modra);
