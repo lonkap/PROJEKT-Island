@@ -42,6 +42,9 @@ h1, h2, .menu
 	
 }
 
+.fotka img{
+	width: 100%;
+}
 h1
 {
 	color: var(--bila);
@@ -219,6 +222,8 @@ footer a
 		border-bottom:1px solid var(--silver);
 	
 	}
+
+	
 	li{
 		border-bottom: none;
 		padding: 0;
@@ -298,7 +303,6 @@ body{
 li a{
 	padding-left: 0;
 }	
-}
 
 .uvod{
 	flex:0 0 75% ;
@@ -353,4 +357,4 @@ body{
 	padding-left:25%;
 }
 
-
+}
